@@ -56,7 +56,7 @@ function Page5() {
   if (isMobile) {
     return (
       <>
-        <div className="section statement-section">
+        <div className="section statement-section ">
           <div className="padding-global">
             <div className="container-default portfolio">
               <div className="portfolio-container">

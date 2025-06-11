@@ -1,14 +1,12 @@
 import React from 'react';
-import './button.css'; // or use CSS Modules if preferred
+import './button.css'; 
 
-const Button = () => {
+const Button = ({ text = 'Menu', className = '' }) => {
   return (
-   
-      <h3 className="container btn text-white text-2xl">
-        <span className="upper ">Menu</span>
-        <span className="lower ">Menu</span>
-      </h3>
-    
+    <h3 className={`container btn ${className} bg-white text-black `}>
+      <span className="upper">{text}</span>
+      <span className="lower">{text}</span>
+    </h3>
   );
 };
 
