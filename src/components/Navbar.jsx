@@ -2,7 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="container  w-container">
+    <div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar w-nav">
+        <div className="container w-container">
           <a href="#" className="brand w-nav-brand"><img src="images/logo-prixa.svg" loading="lazy" width="200" alt=""/></a>
           <header role="navigation" className="nav-menu w-nav-menu">
             <a href="#" className="menu-item w-nav-link link">About</a>
@@ -18,7 +19,8 @@ const Navbar = () => {
           <div className="w-nav-button">
             <div className="icon w-icon-nav-menu"></div>
           </div>
-        </div> 
+        </div>
+      </div> 
   )
 }
 

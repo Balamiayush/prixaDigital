@@ -55,9 +55,9 @@ function Page5() {
 
   if (isMobile) {
     return (
-      <>
+      <div>
         <div className="section statement-section ">
-          <div className="padding-global">
+          <div className="padding-global ">
             <div className="container-default portfolio">
               <div className="portfolio-container">
                 {products.map((product, index) => (
@@ -103,7 +103,7 @@ function Page5() {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 
@@ -126,7 +126,7 @@ function Page5() {
               key={index}
               animate={{ y: -pos + "rem" }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-              className="w-full h-full"
+              className="w-full h-full "
             >
               <img
                 className="absolute object-cover w-full h-full"

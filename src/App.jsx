@@ -152,7 +152,7 @@ const App = () => {
     <div className="body bg-black">
       <div className="page-wrapper">
         <div className="main-wrapper">
-          <Loader />
+          {/* <Loader /> */}
           <Navbar />
           <Home />
           <Page2 />

@@ -147,7 +147,6 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  
   padding: 40px;
   display: flex;
 }
@@ -464,7 +463,7 @@
 }
 
 .portfolio-container {
-  width: 100%;
+  width: 100%
 }
 
 .portfolio-heading {
