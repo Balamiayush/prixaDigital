@@ -7,9 +7,9 @@ const Navbar = () => {
         <div class="container w-container">
           <a href="#" class="brand w-nav-brand"><img src="images/logo-prixa.svg" loading="lazy" width="200" alt=""/></a>
           <header role="navigation" class="nav-menu w-nav-menu">
-            <a href="#" class="menu-item w-nav-link">About</a>
-            <a href="#" class="menu-item w-nav-link">Our Work</a>
-            <a href="#" class="menu-item w-nav-link">Testemonial</a>
+            <a href="#" class="menu-item w-nav-link link">About</a>
+            <a href="#" class="menu-item w-nav-link link">Our Work</a>
+            <a href="#" class="menu-item w-nav-link link">Testemonial</a>
             <a href="#" class="button ghost w-inline-block">
               <div class="text-block-3">View Case Studies</div><img src="images/arrow-btn.svg" loading="lazy" alt=""/>
             </a>

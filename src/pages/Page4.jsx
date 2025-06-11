@@ -55,7 +55,7 @@ const TagGroup = ({ tags, reverse }) => {
 
 const Page4 = () => {
   return (
-    <section className="section services-section">
+    <section className="section services-section ">
       <div className="padding-global">
         <div className="container-default enterise-title">
           <h2 className="statement1">Enterprise-Grade Technology</h2>

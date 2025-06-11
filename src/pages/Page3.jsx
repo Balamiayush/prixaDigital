@@ -26,7 +26,7 @@ const Page3 = () => {
           <div className="sticky-container">
             <div className="spline-scene-2" ref={splineRef}>
               {loadSpline && (
-                <Suspense fallback={<div className="loading">Loading 3D...</div>}>
+                <Suspense fallback={<div className="loading"></div>}>
                   <LazySpline scene="https://prod.spline.design/SOpCtg02h6wgCyPG/scene.splinecode" />
                 </Suspense>
               )}

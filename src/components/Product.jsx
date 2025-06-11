@@ -3,7 +3,7 @@ import Button from "./button/Button";
 
 function Product({ val, mover, count }) {
   return (
-    <div className="w-full relative left-10 py-10 md:py-20 h-auto md:h-[23rem] text-white">
+    <div className="w-full relative lg:top-[4rem]   left-10 py-10 md:py-20 h-auto md:h-[23rem] text-white">
       <div 
         onMouseEnter={() => {mover(count)}} 
         className="max-w-screen-xl  md:px-6 flex flex-col md:flex-row items-center md:items-center justify-between "
