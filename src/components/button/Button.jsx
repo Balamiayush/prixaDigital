@@ -1,11 +1,13 @@
 import React from 'react';
 import './button.css'; 
+import { FaArrowRight } from "react-icons/fa";
+
 
 const Button = ({ text = 'Menu', className = '' }) => {
   return (
-    <h3 className={`container btn ${className} bg-white text-black `}>
-      <span className="upper">{text}</span>
-      <span className="lower">{text}</span>
+    <h3 className={`btncontainer btn ${className} bg-white text-black `}>
+      <a  className="upper">{text} <i class="ri-arrow-right-line"></i></a > 
+      <a   className="lower">{text} <i class="ri-arrow-right-line"></i></a >
     </h3>
   );
 };

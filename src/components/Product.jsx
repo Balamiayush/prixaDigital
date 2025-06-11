@@ -3,7 +3,7 @@ import Button from "./button/Button";
 
 function Product({ val, mover, count }) {
   return (
-    <div className="w-full   py-10 md:py-20 h-auto md:h-[23rem] text-white relative left-10">
+    <div className="w-full relative left-10 py-10 md:py-20 h-auto md:h-[23rem] text-white">
       <div 
         onMouseEnter={() => {mover(count)}} 
         className="max-w-screen-xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0"
@@ -12,8 +12,8 @@ function Product({ val, mover, count }) {
         <div className="dets w-full md:w-1/4">
           <p className="mb-6 md:mb-10">{val.description}</p>
           <div className="flex flex-wrap items-center gap-3 md:gap-5">
-            {val.live &&  <Button text="Live Project" />}
-            {val.case &&  <Button text="Case Study" />}
+            {val.live &&  <Button text="Live Project " />}
+            {val.case &&  <Button text="Case Study " />}
           </div>
         </div>
       </div>
