@@ -6,6 +6,7 @@ function Page5() {
   const products = [
     {
       title: "ThirdFactor",
+      link:"https://thirdfactor.com/",
       description:
         "We build websites that feel just right—for you and your audience. Whether it's a bold new brand or a refresh of something familiar, we focus on clean design, smooth user experience, and real results.",
       live: true,
@@ -14,6 +15,7 @@ function Page5() {
     },
     {
       title: "Speak Up Nepal",
+      link:"https://speakupnepal.org/",
       description:
         "The platform for Nepal to express issues in their day to day life and see it change.",
       src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d31af65aa521dc16b6a6_speakupnepal.png",
@@ -22,6 +24,7 @@ function Page5() {
     },
     {
       title: "Bearyfine",
+      link:"https://speakupnepal.org/",
       description:
         "Our second year was filled with great events, exciting projects, awards and amazing people - so we made another showcase to celebrate.",
       src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d548e1783a1cc5af667d_beary-fine.png",
@@ -31,6 +34,7 @@ function Page5() {
     {
       title: "Kathmandu Ko Katha",
       description: "connecting dots using stories",
+      link:"https://www.instagram.com/kathmandu_ko_katha/",
       src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png",
       live: false,
       case: false,
@@ -111,7 +115,7 @@ function Page5() {
   return (
     <div className="mt-20 lg:mt-32 relative">
       {products.map((val, index) => (
-        <Product key={index} val={val} mover={mover} count={index} />
+        <Product key={index} val={val}  mover={mover} count={index} />
       ))}
 
       <div className="absolute top-0 w-full h-full pointer-events-none">

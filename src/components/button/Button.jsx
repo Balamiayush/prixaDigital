@@ -3,10 +3,10 @@ import './button.css';
 import { FaArrowRight } from "react-icons/fa";
 
 
-const Button = ({ text = 'Menu', className = '' }) => {
+const Button = ({ text , src, className = '',val }) => {
   return (
     <h3 className={`btncontainer btn ${className} bg-white text-black `}>
-      <a  className="upper">{text} <i class="ri-arrow-right-line"></i></a > 
+      <a href={`${src}`}  className="upper">{text} <i class="ri-arrow-right-line"></i></a > 
       <a   className="lower">{text} <i class="ri-arrow-right-line"></i></a >
     </h3>
   );
