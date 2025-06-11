@@ -849,7 +849,7 @@
     grid-auto-columns: 1fr;
     align-items: start;
     height: auto;
-    padding: 64px 32px;
+    padding: 20px;
     display: grid;
   }
 

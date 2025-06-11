@@ -18,7 +18,7 @@ const Page6 = () => {
             
         <div className="spline-absolute">
             <div className="spline-scene">
-              
+  
  <div className="fade-out-bottom "></div>
           <Spline className="spline-scene" data-w-id="78f36260-0766-52e8-f25a-8fb9798a6483" data-animation-type="spline" scene="https://prod.spline.design/q7Zli-P11r5mAIez/scene.splinecode">
             <canvas />
