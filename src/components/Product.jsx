@@ -8,7 +8,7 @@ function Product({ val, mover, count }) {
         onMouseEnter={() => {mover(count)}} 
         className="max-w-screen-xl  md:px-6 flex flex-col md:flex-row items-center md:items-center justify-between "
       >
-        <h1 className="titleProduct md:text-5xl capitalize font-medium mb-4 md:mb-0">{val.title}</h1>
+        <h1 className="titleProduct  capitalize font-medium mb-4 md:mb-0">{val.title}</h1>
         <div className="dets w-full md:w-1/4">
           <p className="mb-6 md:mb-10">{val.description}</p>
           <div className="flex flex-wrap items-center gap-3 md:gap-5">
