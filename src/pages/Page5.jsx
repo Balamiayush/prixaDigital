@@ -3,10 +3,14 @@ import Product from "../components/Product";
 import { motion } from "framer-motion";
 
 function Page5() {
+//   1. speakupnepal.org
+// 2. bearyfine.com
+// 3. kathmandukokatha (https://www.instagram.com/kathmandu_ko_katha/)
+// 4. Thirdfactor.ai 
   const products = [
     {
       title: "ThirdFactor",
-      link:"https://thirdfactor.com/",
+      link:"https://www.thirdfactor.ai/",
       description:
         "We build websites that feel just right—for you and your audience. Whether it's a bold new brand or a refresh of something familiar, we focus on clean design, smooth user experience, and real results.",
       live: true,
@@ -36,7 +40,7 @@ function Page5() {
       description: "connecting dots using stories",
       link:"https://www.instagram.com/kathmandu_ko_katha/",
       src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png",
-      live: false,
+      live: true,
       case: false,
     },
   ];
