@@ -20,17 +20,17 @@ const Page2 = () => {
         <div className="bg-wrapper statement-blur-circle">
           {/* Animated Rotating Image 1 */}
           <motion.img
-            src="images/Ellipse-21.png"
+            src="images/Ellipse-21.webp"
             loading="lazy"
             sizes="(max-width: 2072px) 100vw, 2072px"
             alt="Decorative rotating element"
             srcSet="
-              images/Ellipse-21-p-500.png 500w,
-              images/Ellipse-21-p-800.png 800w,
-              images/Ellipse-21-p-1080.png 1080w,
-              images/Ellipse-21-p-1600.png 1600w,
-              images/Ellipse-21-p-2000.png 2000w,
-              images/Ellipse-21.png 2072w
+              images/Ellipse-21-p-500.webp 500w,
+              images/Ellipse-21-p-800.webp 800w,
+              images/Ellipse-21-p-1080.webp 1080w,
+              images/Ellipse-21-p-1600.webp 1600w,
+              images/Ellipse-21-p-2000.webp 2000w,
+              images/Ellipse-21.webp 2072w
             "
             className="image"
             initial={{ rotateZ: 0 }}
@@ -48,17 +48,17 @@ const Page2 = () => {
 
           {/* Animated Rotating Image 2 */}
           <motion.img
-            src="images/Ellipse-22.png"
+            src="images/Ellipse-22.webp"
             loading="lazy"
             sizes="(max-width: 2328px) 100vw, 2328px"
             alt=""
             srcSet="
-              images/Ellipse-22-p-500.png 500w,
-              images/Ellipse-22-p-800.png 800w,
-              images/Ellipse-22-p-1080.png 1080w,
-              images/Ellipse-22-p-1600.png 1600w,
-              images/Ellipse-22-p-2000.png 2000w,
-              images/Ellipse-22.png 2328w
+              images/Ellipse-22-p-500.webp 500w,
+              images/Ellipse-22-p-800.webp 800w,
+              images/Ellipse-22-p-1080.webp 1080w,
+              images/Ellipse-22-p-1600.webp 1600w,
+              images/Ellipse-22-p-2000.webp 2000w,
+              images/Ellipse-22.webp 2328w
             "
             className="image-2"
             initial={{ rotateZ: 0 }}

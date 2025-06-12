@@ -68,7 +68,7 @@ const Page4 = () => {
         <div className="bg-wrapper">
           <div className="circle-logo top">
             <img
-              src="images/prixa-logo.png"
+              src="images/prixa-logo.webp"
               loading="lazy"
               alt="Prixa logo"
               className="image-5"
@@ -78,17 +78,17 @@ const Page4 = () => {
           <div className="circle-logo" />
 
           <img
-            src="images/bg-blur-enterprise.png"
+            src="images/bg-blur-enterprise.webp"
             loading="lazy"
             sizes="(max-width: 2878px) 100vw, 2878px"
             srcSet="
-              images/bg-blur-enterprise-p-500.png 500w,
-              images/bg-blur-enterprise-p-800.png 800w,
-              images/bg-blur-enterprise-p-1080.png 1080w,
-              images/bg-blur-enterprise-p-1600.png 1600w,
-              images/bg-blur-enterprise-p-2000.png 2000w,
-              images/bg-blur-enterprise-p-2600.png 2600w,
-              images/bg-blur-enterprise.png 2878w
+              images/bg-blur-enterprise-p-500.webp 500w,
+              images/bg-blur-enterprise-p-800.webp 800w,
+              images/bg-blur-enterprise-p-1080.webp 1080w,
+              images/bg-blur-enterprise-p-1600.webp 1600w,
+              images/bg-blur-enterprise-p-2000.webp 2000w,
+              images/bg-blur-enterprise-p-2600.webp 2600w,
+              images/bg-blur-enterprise.webp 2878w
             "
             alt="Enterprise blur background"
             className="bg-enterprise image-4"
