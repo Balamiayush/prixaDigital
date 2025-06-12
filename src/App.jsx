@@ -2,7 +2,7 @@ import React from 'react';
 import './css/normalize.css';
 import './css/webflow.css';
 import './css/prixa-digital.webflow.css';
-// helof
+import Lenis from 'lenis'
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Page2 from './pages/Page2';
@@ -22,6 +22,15 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
 const App = () => {
   useGSAP(() => {
+    // Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
     // Split text into spans
     let typeSplit = new SplitType("[text-split]", {
       types: "words, chars",
