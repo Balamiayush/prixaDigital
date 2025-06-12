@@ -14,7 +14,7 @@ function Page5() {
       description:
         "We build websites that feel just right—for you and your audience. Whether it's a bold new brand or a refresh of something familiar, we focus on clean design, smooth user experience, and real results.",
       live: true,
-      src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842b33a8c67691b340e6a95_portfolioimg.png",
+      src: "images/thirdai.mp4",
       case: false,
     },
     {
@@ -22,16 +22,16 @@ function Page5() {
       link:"https://speakupnepal.org/",
       description:
         "The platform for Nepal to express issues in their day to day life and see it change.",
-      src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d31af65aa521dc16b6a6_speakupnepal.png",
-      live: true,
+        src:"images/speakUpNepal.mp4",
+        live: true,
       case: false,
     },
     {
       title: "Bearyfine",
-      link:"https://speakupnepal.org/",
+      link:"https://bearyfine.org/",
       description:
         "Our second year was filled with great events, exciting projects, awards and amazing people - so we made another showcase to celebrate.",
-      src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d548e1783a1cc5af667d_beary-fine.png",
+      src: "images/bearyfind.mp4",
       live: true,
       case: false,
     },
@@ -74,12 +74,24 @@ function Page5() {
                       <div role="list" className="w-dyn-items">
                         <div role="listitem" className="single-portfolio w-dyn-item">
                           <h1 className="portfolio-heading">{product.title}</h1>
-                          <img
+                          {
+                              product.src === "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png"
+                              ?
+                              <img
+                              src={product.src}
+                              loading="lazy"
+                              alt=""
+                              className="portfolio-img"
+                              />
+                              :
+                            <video
                             src={product.src}
                             loading="lazy"
+                            loop autoPlay muted
                             alt=""
                             className="portfolio-img"
-                          />
+                            />
+                          }
                           <div className="right-wrapper-portfolio">
                             <h1 className="paragraph-l portfolio-p">{product.description}</h1>
                             <a href="#" className="button w-inline-block">
@@ -127,20 +139,26 @@ function Page5() {
           initial={{ y: pos, x: "-50%" }}
           animate={{ y: pos + "rem" }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-          className="window absolute -right-[20%] w-1/2 h-1/2 lg:w-[32rem] lg:h-[23rem] lg:left-[44%] overflow-hidden"
+          className="window absolute -right-[20%] w-[40%] h-[40%] lg:w-[32rem] lg:h-[23rem] lg:left-[44%] overflow-hidden"
         >
           {products.map((product, index) => (
             <motion.div
               key={index}
               animate={{ y: -pos + "rem" }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-              className="w-full h-full "
+              className="w-full h-full"
             >
-              <img
-                className="absolute object-cover w-full h-full"
+              {
+                product.src === "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png" ?
+                <img className="absolute object-cover w-full h-full" src={product.src} alt={`Project ${index + 1}`} /> :
+                <video
+
+                autoPlay muted loop
+                className="absolute w-full rounded-md  h-full "
                 src={product.src}
                 alt={`Project ${index + 1}`}
-              />
+                />
+              }
             </motion.div>
           ))}
         </motion.div>

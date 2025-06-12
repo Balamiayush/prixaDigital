@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Page2 = () => {
   return (
@@ -18,12 +18,12 @@ const Page2 = () => {
         </div>
 
         <div className="bg-wrapper statement-blur-circle">
-          <img
+          {/* Animated Rotating Image 1 */}
+          <motion.img
             src="images/Ellipse-21.png"
             loading="lazy"
-            data-w-id="b8f98891-2299-1f59-2587-7569ea299a65"
             sizes="(max-width: 2072px) 100vw, 2072px"
-            alt=""
+            alt="Decorative rotating element"
             srcSet="
               images/Ellipse-21-p-500.png 500w,
               images/Ellipse-21-p-800.png 800w,
@@ -33,11 +33,23 @@ const Page2 = () => {
               images/Ellipse-21.png 2072w
             "
             className="image"
+            initial={{ rotateZ: 0 }}
+            animate={{ rotateZ: 360 }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            style={{
+              willChange: 'transform',
+              transformStyle: 'preserve-3d'
+            }}
           />
-          <img
+
+          {/* Animated Rotating Image 2 */}
+          <motion.img
             src="images/Ellipse-22.png"
             loading="lazy"
-            data-w-id="b8f98891-2299-1f59-2587-7569ea299a66"
             sizes="(max-width: 2328px) 100vw, 2328px"
             alt=""
             srcSet="
@@ -49,6 +61,17 @@ const Page2 = () => {
               images/Ellipse-22.png 2328w
             "
             className="image-2"
+            initial={{ rotateZ: 0 }}
+            animate={{ rotateZ: 360 }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            style={{
+              willChange: 'transform',
+              transformStyle: 'preserve-3d'
+            }}
           />
         </div>
       </div>
