@@ -1,58 +1,5 @@
 import React from "react";
 
-const tagData = [
-  {
-    id: "kurac1",
-    tags: [
-      "Landing Pages", "AI Solutions", "Landing Pages", "AI Solutions",
-      "AI Solutions", "AI Solutions", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages",
-    ],
-  },
-  {
-    id: "kurac2",
-    tags: [
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "AI Solutions", "Landing Pages", "AI Solutions", "AI Solutions",
-      "AI Solutions", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages",
-    ],
-  },
-  {
-    id: "kurac3",
-    tags: [
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages", "Landing Pages", "Landing Pages", "Landing Pages",
-      "AI Solutions", "Landing Pages", "AI Solutions", "AI Solutions",
-      "AI Solutions", "Landing Pages", "Landing Pages", "Landing Pages",
-      "Landing Pages",
-    ],
-  },
-];
-
-const TagGroup = ({ tags, reverse }) => {
-  const marqueeClass = reverse ? "marquee-track reverse" : "marquee-track";
-
-  return (
-    <div className="marquee-wrapper">
-      <div className={marqueeClass}>
-        {[...tags, ...tags].map((tag, idx) => (
-          <div className="single-tag" key={idx}>
-            {tag}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 const Page4 = () => {
   return (
     <section className="section services-section ">
@@ -64,8 +11,13 @@ const Page4 = () => {
             solutions that power the future of your business.
           </div>
         </div>
-
-        <div className="bg-wrapper">
+      
+        <div className="bg-wrapper flex-col w-full h-screen relative">
+              <div class="w-[90%] h-[60%] rounded-lg mt-10  sticky top-[10%]  bg-red-500"></div>
+    <div class="w-[90%] h-[60%] rounded-lg   sticky top-[15%]  bg-green-500"></div>
+    <div class="w-[90%] h-[60%] rounded-lg   sticky top-[20%]  bg-blue-500"></div>
+    <div class="w-[90%] h-[60%] rounded-lg   sticky top-[25%]  bg-purple-500"></div>
+    <div class="w-[90%] h-[60%] rounded-lg   sticky top-[30%]  bg-orange-500"></div>
           <div className="circle-logo top">
             <img
               src="images/prixa-logo.webp"
@@ -93,16 +45,6 @@ const Page4 = () => {
             alt="Enterprise blur background"
             className="bg-enterprise image-4"
           />
-
-          <div className="tags-slider space-y-4 mt-10">
-            {tagData.map((group, index) => (
-              <TagGroup
-                key={group.id}
-                tags={group.tags}
-                reverse={index % 2 !== 0}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
@@ -110,3 +52,4 @@ const Page4 = () => {
 };
 
 export default Page4;
+
