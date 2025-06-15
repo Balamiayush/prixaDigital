@@ -42,10 +42,9 @@ const ServicesSection = () => {
 
   return (
     <div className="flex flex-col w-full items-center justify-center text-white space-y-[2rem] relative pb-40 ">
-      <span className="font-bold text-center  text-5xl z-10 bg-[#080807] py-4">
-        Enterprise-Grade <br />
-        Technology
-      </span>
+      <div className="font-bold text-center relative top-[-4rem]  text-5xl z-10   ">
+        Enterprise-Grade Technology 
+      </div>
 
       {services.map((service, index) => (
         <motion.div
@@ -63,7 +62,7 @@ const ServicesSection = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="w-[90%] h-[65vh] rounded-xl sticky  border border-[#393632] bg-[#080807] flex justify-between p-10"
           style={{
-            top: `${10+ index * 10}%`,
+            top: `${5+ index * 8}%`,
             willChange: "transform, opacity",
             transform: "translateZ(0)",
             backfaceVisibility: "hidden",
@@ -79,7 +78,7 @@ const ServicesSection = () => {
               <div className="flex flex-col  items-left justify-end  w-full">
               <li
               key={i}
-              className="text-sm  flex   gap-5 items-start"
+              className="text-sm  flex   gap-5 items-center"
               >
 
                 <span className=" ">
