@@ -83,7 +83,7 @@ const ServicesSection = () => {
                 <span className=" ">
                   {i+1}
                   </span>
-                  <span className="text-3xl font-semibold">     
+                  <span className="text-lg lg:text-3xl font-semibold">     
                 {item}
                   </span>
               </li>
