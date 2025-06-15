@@ -56,7 +56,7 @@ const ServicesSection = () => {
             transition: {
               duration: 0.6,
               ease: [0.76, 0, 0.24, 1],
-              delay: index * 0.5,
+              delay: index * 0.3,
             },
           }}
           viewport={{ once: true, amount: 0.3 }}
