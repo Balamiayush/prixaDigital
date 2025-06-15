@@ -129,7 +129,7 @@ function Page5() {
 
   // Desktop with animation
   return (
-    <div className="flex flex-col items-center lg:mt-32 relative top-10">
+    <div className="flex flex-col items-center lg:mt-32 relative top-20">
       {products.map((val, index) => (
         <Product key={index} val={val}  mover={mover} count={index} />
       ))}
