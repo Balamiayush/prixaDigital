@@ -1,35 +1,14 @@
-import React, { Suspense, lazy, useEffect, useRef, useState } from 'react';
-
-// Lazy load the Spline component
-const LazySpline = lazy(() => import('@splinetool/react-spline'));
+import React from 'react';
+import Spline from '@splinetool/react-spline';
 
 const Page3 = () => {
-  const splineRef = useRef(null);
-  const [loadSpline, setLoadSpline] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setLoadSpline(true);
-      }
-    });
-
-    if (splineRef.current) observer.observe(splineRef.current);
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="section">
       <div className="padding-global">
         <div className="container-default sticky">
           <div className="sticky-container">
-            <div className="spline-scene-2" ref={splineRef}>
-              {loadSpline && (
-                <Suspense fallback={<div className="loading"></div>}>
-                  <LazySpline scene="https://prod.spline.design/SOpCtg02h6wgCyPG/scene.splinecode" />
-                </Suspense>
-              )}
+            <div className="spline-scene-2">
+              <Spline scene="https://prod.spline.design/SOpCtg02h6wgCyPG/scene.splinecode" />
             </div>
 
             <div className="scrolling-features">
@@ -55,7 +34,7 @@ const Page3 = () => {
               </div>
 
               <div className="feature-scrolling right">
-                <img src="images/eye-popping.webp" loading="lazy" alt="" className="image-3" />
+                <img src="images/eye-popping.webp" alt="" className="image-3" />
                 <h3 className="heading-3">Eye-popping Design</h3>
                 <div className="paragraph">
                   Our designs push boundaries—bold, unique, and tailored to make an unforgettable impact on every screen.
@@ -63,7 +42,7 @@ const Page3 = () => {
               </div>
 
               <div className="feature-scrolling">
-                <img src="images/visual-icon.webp" loading="lazy" alt="" className="image-3" />
+                <img src="images/visual-icon.webp" alt="" className="image-3" />
                 <h3 className="heading-3">Visual<br />Extravaganza</h3>
                 <div className="paragraph">
                   We blend stunning visuals with powerful narratives to captivate and engage your audience from the very first glance.
@@ -73,7 +52,7 @@ const Page3 = () => {
 
             <div className="scrolling-features">
               <div className="feature-scrolling right second-features">
-                <img src="images/visua-storytelling.webp" loading="lazy" alt="" className="image-3" />
+                <img src="images/visua-storytelling.webp" alt="" className="image-3" />
                 <h3 className="heading-3">Visual<br />Storytelling</h3>
                 <div className="paragraph">
                   We turn complex ideas into compelling stories that resonate with your audience, forging deeper emotional connections.
@@ -81,7 +60,7 @@ const Page3 = () => {
               </div>
 
               <div className="feature-scrolling second-features">
-                <img src="images/data-driven.webp" loading="lazy" alt="" className="image-3" />
+                <img src="images/data-driven.webp" alt="" className="image-3" />
                 <h3 className="heading-3">Data-Driven Marketing</h3>
                 <div className="paragraph">
                   We blend stunning visuals with powerful narratives to captivate and engage your audience from the very first glance.
@@ -97,4 +76,3 @@ const Page3 = () => {
 };
 
 export default Page3;
-//fsfsf
