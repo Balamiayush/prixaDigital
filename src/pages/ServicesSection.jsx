@@ -24,22 +24,27 @@ const ServicesSection = () => {
     },
     {
       title: "Mobile Apps",
+      img:"images/mobile.png",
 
       des: "Bringing your ideas to the palms of users with seamless cross-platform mobile applications that deliver impact and performance.",
       subTitle: ["React Native", "Flutter", "Performance Optimization"],
     },
     {
       title: "SEO",
+      img:"images/seo.png",
       des: "Optimize your visibility on search engines with smart keyword strategies and technical SEO best practices.",
       subTitle: ["On-Page SEO", "Performance Audits", "Technical Optimization"],
     },
     {
+
       title: "Digital Marketing",
+      img:"images/digital.png",
       des: "Drive traffic and conversions with tailored digital campaigns across channels like Google Ads, Meta, and email funnels.",
       subTitle: ["Google Ads", "Content Strategy", "Analytics"],
     },
     {
       title: "Prixa Academy",
+      img:"images/academy.png",
       des: "Empowering future innovators with hands-on learning in web, design, AI, and business through practical, guided sessions.",
       subTitle: ["Frontend Training", "UI/UX Workshops", "Mentorship"],
     },
@@ -78,7 +83,7 @@ const ServicesSection = () => {
           <div className="  w-1/2 flex flex-col ">
           <h2 className="text-gray-400 text-sm mb-2 ">({index + 1})</h2>
           <div className="imgs  w-full lg:w-1/2 top-[40%]   relative  lg:static  ">
-          <img src="images/webdev.png" alt="" className="w-full h-full object-cover" />
+          <img src={service.img} alt="" className="w-full h-full object-cover" />
 
           </div>
           </div>
