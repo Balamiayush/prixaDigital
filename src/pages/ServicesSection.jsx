@@ -5,7 +5,7 @@ const ServicesSection = () => {
   const services = [
     {
       title: "Web Development",
-      des: "A website developed to captivate and convert can elevate your brand to new heights. My custom-coded sites are meticulously crafted to reflect your unique identity, delivering seamless experiences with a focus on animation—keeping your audience engaged and returning.",
+      des: "I create custom-coded, animation-rich websites that reflect your brand's identity, captivate visitors, and drive conversions through seamless, engaging user experiences.",
       subTitle: ["CMS Integration", "Motion & Animations", "3D Development"],
     },
     {
@@ -42,8 +42,11 @@ const ServicesSection = () => {
 
   return (
     <div className="flex flex-col w-full items-center justify-center text-white space-y-[2rem] relative pb-40 ">
-      <div className="font-bold text-center relative top-[-4rem]  text-5xl z-10   ">
+      <div className=" text-center  relative top-[-2rem] z-10     ">
+        <span className="font-bold text-center text-5xl ">
         Enterprise-Grade Technology 
+        </span>
+        <p>At Prixa, we build scalable, secure, and efficient digital solutions that power the future of your business.</p>
       </div>
 
       {services.map((service, index) => (
@@ -67,12 +70,18 @@ const ServicesSection = () => {
             backfaceVisibility: "hidden",
           }}
         >
+          <div className="  w-1/2 flex flex-col ">
           <h2 className="text-gray-400 text-sm mb-2 ">({index + 1})</h2>
+          <div className="imgs  w-full lg:w-1/2 top-[40%]   relative  lg:static  ">
+          <img src="images/webdev.png" alt="" className="w-full h-full object-cover" />
+
+          </div>
+          </div>
           <div className="flex flex-col">
           <h2 className="text-3xl font-bold mb-4">{service.title}</h2>
           <p className="text-base text-gray-300 max-w-2xl mb-6">{service.des}</p>
 
-          <ul className="flex flex-col gap-5 w-full justify-end">
+          <ul className="flex flex-col gap-5 w-full justify-end  relative top-4">
             {service.subTitle?.map((item, i) => (
               <div className="flex flex-col  items-left justify-end  w-full">
               <li
