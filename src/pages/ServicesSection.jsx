@@ -5,21 +5,26 @@ const ServicesSection = () => {
   const services = [
     {
       title: "Web Development",
+      img:"images/webdev.png",
       des: "I create custom-coded, animation-rich websites that reflect your brand's identity, captivate visitors, and drive conversions through seamless, engaging user experiences.",
       subTitle: ["CMS Integration", "Motion & Animations", "3D Development"],
     },
     {
       title: "AI Solutions",
+      img:"images/ai.png",
       des: "From intelligent chatbots to automation tools, I craft AI-powered solutions that streamline operations and elevate customer experiences.",
       subTitle: ["AI Chatbot", "Custom APIs", "Data Automation"],
     },
     {
       title: "UI/UX Design",
+      img:"images/uiux.png",
+
       des: "Crafting intuitive user interfaces and meaningful user experiences that make products both beautiful and usable.",
       subTitle: ["Wireframing", "Prototyping", "Interaction Design"],
     },
     {
       title: "Mobile Apps",
+      
       des: "Bringing your ideas to the palms of users with seamless cross-platform mobile applications that deliver impact and performance.",
       subTitle: ["React Native", "Flutter", "Performance Optimization"],
     },
