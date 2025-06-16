@@ -24,7 +24,7 @@ const ServicesSection = () => {
     },
     {
       title: "Mobile Apps",
-      
+
       des: "Bringing your ideas to the palms of users with seamless cross-platform mobile applications that deliver impact and performance.",
       subTitle: ["React Native", "Flutter", "Performance Optimization"],
     },
@@ -47,7 +47,7 @@ const ServicesSection = () => {
 
   return (
     <div className="flex flex-col w-full items-center justify-center text-white space-y-[2rem] relative pb-40 ">
-      <div className=" text-center  relative top-[-2rem] z-10     ">
+      <div className=" text-center  relative top-[-2rem] z-10 flex flex-col gap-2     ">
         <span className="font-bold text-center text-5xl ">
         Enterprise-Grade Technology 
         </span>
