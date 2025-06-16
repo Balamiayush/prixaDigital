@@ -44,14 +44,14 @@ const Navbar = () => {
   };
 
   return (
-    <div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar w-nav">
+    <div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar w-nav ">
       <div className="container w-container">
         <a href="#" className="brand w-nav-brand">
           <img src="images/logo-prixa.svg" loading="lazy" width="200" alt="" />
         </a>
 
         {/* Desktop Navigation (unchanged) */}
-        <header role="navigation" className="nav-menu w-nav-menu hidden md:block">
+        <header role="navigation" className="nav-menu w-nav-menu  hidden md:block">
           <a href="#" className="menu-item w-nav-link link">About</a>
           <a href="#" className="menu-item w-nav-link link">Our Work</a>
           <a href="#" className="menu-item w-nav-link link">Testemonial</a>
