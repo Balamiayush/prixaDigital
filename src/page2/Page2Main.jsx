@@ -10,14 +10,14 @@ import Navbar from '../components/Navbar'
 const Page2Main = () => {
   return (
     <div className='w-full text-white overflow-hidden'>
-      <Navbar/>
-        <Page2HeroContainer/>
-          <DetailsPage/>
-      <ImgSliderAnimation/>
-      <Overview/>
-         <Page6 /> 
-            <Page7 />
-        </div>
+      <Navbar />
+      <Page2HeroContainer />
+      <DetailsPage />
+      <ImgSliderAnimation />
+      <Overview />
+      <Page6 />
+      <Page7 />
+    </div>
   )
 }
 

@@ -23,19 +23,6 @@
   gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
   const App = () => {
-    
-    useEffect(() => {
-  const lenis = new Lenis({ autoRaf: false });
-
-  const raf = (time) => {
-    lenis.raf(time); // update Lenis manually
-    requestAnimationFrame(raf);
-  };
-
-  requestAnimationFrame(raf);
-
-  return () => lenis.destroy();
-}, []);
     useGSAP(() => {
       // Split text into spans
       let typeSplit = new SplitType("[text-split]", {
