@@ -5,10 +5,12 @@ import ImgSliderAnimation from '../components/ImgSliderAnimation'
 import Overview from './Overview'
 import Page6 from '../pages/Page6'
 import Page7 from '../pages/Page7'
+import Navbar from '../components/Navbar'
 
 const Page2Main = () => {
   return (
     <div className='w-full text-white overflow-hidden'>
+      <Navbar/>
         <Page2HeroContainer/>
           <DetailsPage/>
       <ImgSliderAnimation/>
