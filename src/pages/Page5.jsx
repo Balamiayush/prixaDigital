@@ -15,7 +15,7 @@ function Page5() {
         "We build websites that feel just right—for you and your audience. Whether it's a bold new brand or a refresh of something familiar, we focus on clean design, smooth user experience, and real results.",
       live: true,
       src: "images/thirdFactor.mp4",
-      case: false,
+      case: true,
     },
     {
       title: "Speak Up Nepal",
@@ -24,7 +24,7 @@ function Page5() {
         "The platform for Nepal to express issues in their day to day life and see it change.",
         src:"images/Speakupnepal.mp4",
         live: true,
-      case: false,
+      case: true,
     },
     {
       title: "Bearyfine",
@@ -33,7 +33,7 @@ function Page5() {
         "Our second year was filled with great events, exciting projects, awards and amazing people - so we made another showcase to celebrate.",
       src: "images/bearyfind1.mp4",
       live: true,
-      case: false,
+      case: true,
     },
     {
       title: "Kathmandu Ko Katha",
@@ -41,7 +41,7 @@ function Page5() {
       link:"https://www.instagram.com/kathmandu_ko_katha/",
       src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png",
       live: true,
-      case: false,
+      case: true,
     },
   ];
 

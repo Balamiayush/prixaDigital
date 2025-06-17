@@ -12,7 +12,7 @@ function Product({ val, mover, count }) {
         <div className="dets w-full md:w-1/4">
           <p className="mb-6 md:mb-10">{val.description}</p>
           <div className="flex flex-wrap items-center gap-3 md:gap-5">
-            {val.live &&   <Button text="Live Project " src={val.link} />}
+            {val.live &&   <Button text="Live Project " src={val.link} className="bg-white text-black"/>}
             {val.case &&  <Button text="Case Study " src={val.link} />}
           </div>
         </div>

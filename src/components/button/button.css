@@ -2,12 +2,14 @@
 
 .btncontainer {
   cursor: pointer;
-  width: 140px;
+  width: 160px;
+  height: 35px;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
   position: relative;
-  height: 35px;
   font-size: 15px;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -40,4 +42,12 @@
 #btn-top:hover .lower {
   opacity: 0;
   transform: translateY(-20px);
+}
+
+@media screen and (max-width: 600px) {
+  .btncontainer {
+     width: 110px;
+     font-size: 10px;
+  }
+  
 }

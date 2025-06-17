@@ -1,3 +1,4 @@
+
   import React, { useEffect } from 'react';
   import './css/normalize.css';
   import './css/webflow.css';
@@ -167,7 +168,7 @@
         <div className="page-wrapper">
           <div className="main-wrapper">
             {/* <Loader /> */}
-            <Navbar />
+            
             <Home />
             <Page2 />
             <Page3 />
