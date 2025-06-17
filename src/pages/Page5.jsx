@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Product from "../components/Product";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 function Page5() {
-//   1. speakupnepal.org
-// 2. bearyfine.com
-// 3. kathmandukokatha (https://www.instagram.com/kathmandu_ko_katha/)
-// 4. Thirdfactor.ai 
   const products = [
     {
       title: "ThirdFactor",
-      link:"https://www.thirdfactor.ai/",
+      link: "https://www.thirdfactor.ai/",
       description:
         "We build websites that feel just right—for you and your audience. Whether it's a bold new brand or a refresh of something familiar, we focus on clean design, smooth user experience, and real results.",
       live: true,
@@ -19,16 +17,16 @@ function Page5() {
     },
     {
       title: "Speak Up Nepal",
-      link:"https://speakupnepal.org/",
+      link: "https://speakupnepal.org/",
       description:
         "The platform for Nepal to express issues in their day to day life and see it change.",
-        src:"images/Speakupnepal.mp4",
-        live: true,
+      src: "images/Speakupnepal.mp4",
+      live: true,
       case: true,
     },
     {
       title: "Bearyfine",
-      link:"https://bearyfine.org/",
+      link: "https://bearyfine.org/",
       description:
         "Our second year was filled with great events, exciting projects, awards and amazing people - so we made another showcase to celebrate.",
       src: "images/bearyfind1.mp4",
@@ -37,11 +35,11 @@ function Page5() {
     },
     {
       title: "Kathmandu Ko Katha",
-      description: "connecting dots using stories",
-      link:"https://www.instagram.com/kathmandu_ko_katha/",
+      description: "Connecting dots using stories",
+      link: "https://www.instagram.com/kathmandu_ko_katha/",
       src: "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png",
       live: true,
-      case: true,
+      case: false,
     },
   ];
 
@@ -50,7 +48,7 @@ function Page5() {
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 1024);
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -64,44 +62,54 @@ function Page5() {
   if (isMobile) {
     return (
       <div>
-        <div className="section statement-section ">
-          <div className="padding-global ">
+        <div className="section statement-section">
+          <div className="padding-global">
             <div className="container-default portfolio">
               <div className="portfolio-container">
                 {products.map((product, index) => (
                   <div key={index} className="single-portfolio">
                     <div className="single-project-portfolio">
-                      <div role="list" className="w-dyn-items">
-                        <div role="listitem" className="single-portfolio w-dyn-item">
+                      <div className="w-dyn-items">
+                        <div className="single-portfolio w-dyn-item">
                           <h1 className="portfolio-heading">{product.title}</h1>
-                          {
-                              product.src === "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png"
-                              ?
-                              <img
+                          {product.src.endsWith(".png") ? (
+                            <img
                               src={product.src}
                               loading="lazy"
                               alt=""
                               className="portfolio-img"
-                              />
-                              :
-                            <video
-                            src={product.src}
-                            loading="lazy"
-                            loop autoPlay muted
-                            alt=""
-                            className="portfolio-img"
                             />
-                          }
+                          ) : (
+                            <video
+                              src={product.src}
+                              loading="lazy"
+                              loop
+                              autoPlay
+                              muted
+                              alt=""
+                              className="portfolio-img"
+                            />
+                          )}
+
                           <div className="right-wrapper-portfolio">
                             <h1 className="paragraph-l portfolio-p">{product.description}</h1>
-                            <a href="#" className="button w-inline-block">
-                              <div className="text-block-2">View Project</div>
-                              <img
-                                src="images/arrow-dark.svg"
-                                loading="lazy"
-                                alt=""
-                              />
-                            </a>
+
+                            {product.case ? (
+                              <Link href="/portfolio" className="button w-inline-block">
+                                <div className="text-block-2">View Project</div>
+                                <img src="images/arrow-dark.svg" loading="lazy" alt="" />
+                              </Link>
+                            ) : (
+                              <a
+                                href={product.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="button w-inline-block"
+                              >
+                                <div className="text-block-2">View Project</div>
+                                <img src="images/arrow-dark.svg" loading="lazy" alt="" />
+                              </a>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -127,38 +135,32 @@ function Page5() {
     );
   }
 
-  // Desktop with animation
-  return (  
-    <div className="flex flex-col items-center lg:mt-32 relative top-20">
+  // Desktop (same idea, ensure `Product.jsx` uses <Link> if needed)
+  return (
+    <div className="flex flex-col items-center lg:mt-32 relative">
       {products.map((val, index) => (
-        <Product key={index} val={val}  mover={mover} count={index} />
+        <Product key={index} val={val} mover={mover} count={index} />
       ))}
 
       <div className="absolute top-0 w-full h-full pointer-events-none">
         <motion.div
           initial={{ y: pos, x: "-50%" }}
-          animate={{ y: pos + "rem" }}
+          animate={{ y: `${pos}rem` }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
           className="window absolute -right-[20%] w-[40%] h-[40%] lg:w-[32rem] lg:h-[23rem] lg:left-[44%] overflow-hidden"
         >
           {products.map((product, index) => (
             <motion.div
               key={index}
-              animate={{ y: -pos + "rem" }}
+              animate={{ y: `-${pos}rem` }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
               className="w-full h-full"
             >
-              {
-                product.src === "https://cdn.prod.website-files.com/6842b1dc165c23f2ede76d26/6842d6558e799a77fdc1cda4_kathmandu.png" ?
-                <img className="absolute object-cover w-full h-full" src={product.src} alt={`Project ${index + 1}`} /> :
-                <video
-
-                autoPlay muted loop
-                className="absolute w-full rounded-md  h-full "
-                src={product.src}
-                alt={`Project ${index + 1}`}
-                />
-              }
+              {product.src.endsWith(".png") ? (
+                <img className="absolute object-cover w-full h-full" src={product.src} alt={`Project ${index + 1}`} />
+              ) : (
+                <video autoPlay muted loop className="absolute w-full rounded-md h-full" src={product.src} />
+              )}
             </motion.div>
           ))}
         </motion.div>

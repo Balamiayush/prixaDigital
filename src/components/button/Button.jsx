@@ -1,16 +1,42 @@
-
 import React from 'react';
-import './button.css'; 
+import './button.css';
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
+const Button = ({ text, src, className = '', val }) => {
+  const isCaseStudy = val === "case"; // if val is "case", it's internal route
 
-const Button = ({ text , src, className = '',val }) => {
   return (
-    <h3 className={`btncontainer btn ${className}  `}>
-<a href={`${src}`} target="_blank" rel="noopener noreferrer" className="upper">
-  {text} <i className="ri-arrow-right-line"></i>
-</a>
-      <a   className="lower">{text} <i class="ri-arrow-right-line"></i></a >
+    <h3 className={`btncontainer btn ${className}`}>
+      {isCaseStudy ? (
+        <>
+          <Link to="/portfolio" className="upper">
+            {text} <i className="ri-arrow-right-line"></i>
+          </Link>
+          <Link to="/portfolio" className="lower">
+            {text} <i className="ri-arrow-right-line"></i>
+          </Link>
+        </>
+      ) : (
+        <>
+          <a
+            href={src}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="upper"
+          >
+            {text} <i className="ri-arrow-right-line"></i>
+          </a>
+          <a
+            href={src}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="lower"
+          >
+            {text} <i className="ri-arrow-right-line"></i>
+          </a>
+        </>
+      )}
     </h3>
   );
 };

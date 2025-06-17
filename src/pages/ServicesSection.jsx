@@ -18,7 +18,6 @@ const ServicesSection = () => {
     {
       title: "UI/UX Design",
       img:"images/uiux.png",
-
       des: "Crafting intuitive user interfaces and meaningful user experiences that make products both beautiful and usable.",
       subTitle: ["Wireframing", "Prototyping", "Interaction Design"],
     },
@@ -51,7 +50,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center justify-center text-white space-y-[2rem] relative pb-40 ">
+    <div className="flex flex-col m-0 p-0  w-full items-center justify-center text-white  relative  ">
       <div className=" text-center  relative top-[-2rem] z-10 flex flex-col gap-2     ">
         <span className="font-bold text-center text-5xl ">
         Enterprise-Grade Technology 
@@ -62,19 +61,15 @@ const ServicesSection = () => {
       {services.map((service, index) => (
         <motion.div
           key={index}
-          initial={{ y: 50,  }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-            transition: {
-              duration: 0.6,
-              ease: [0.76, 0, 0.24, 1],
-            },
-          }}
+
           viewport={{ once: true, amount: 0.3 }}
-          className="w-[90%] h-[65vh] rounded-xl sticky  border border-[#393632] bg-[#080807] flex justify-between p-10"
+          className={`w-[90%] h-[65vh] rounded-xl sticky   border border-[#393632] bg-[#080807] flex justify-between `}
           style={{
-            top: `${5+ index * 8}%`,
+            top: `
+            
+            ${index===6 ? "20%" : 5+ index * 10}%
+            
+            `,
             willChange: "transform, opacity",
             transform: "translateZ(0)",
             backfaceVisibility: "hidden",

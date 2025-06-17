@@ -11,7 +11,7 @@ function Product({ val, mover, count }) {
         <h1 className="titleProduct  capitalize font-medium mb-4 md:mb-0">{val.title}</h1>
         <div className="dets w-full md:w-1/4">
           <p className="mb-6 md:mb-10">{val.description}</p>
-          <div className="flex flex-wrap items-center gap-3 md:gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
             {val.live &&   <Button text="Live Project " src={val.link} className="bg-white text-black"/>}
             {val.case &&  <Button text="Case Study " src={val.link} />}
           </div>

@@ -3,6 +3,8 @@ import Page2HeroContainer from './Page2HeroContainer'
 import DetailsPage from './DetailsPage'
 import ImgSliderAnimation from '../components/ImgSliderAnimation'
 import Overview from './Overview'
+import Page6 from '../pages/Page6'
+import Page7 from '../pages/Page7'
 
 const Page2Main = () => {
   return (
@@ -11,7 +13,8 @@ const Page2Main = () => {
           <DetailsPage/>
       <ImgSliderAnimation/>
       <Overview/>
-        
+         <Page6 /> 
+            <Page7 />
         </div>
   )
 }

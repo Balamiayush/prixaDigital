@@ -168,6 +168,7 @@
         <div className="page-wrapper">
           <div className="main-wrapper">
             {/* <Loader /> */}
+            <Navbar/>
             
             <Home />
             <Page2 />
