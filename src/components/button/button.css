@@ -1,7 +1,7 @@
 .btncontainer {
   cursor: pointer;
   height: 35px;
-  padding: 0 60px; /* Add horizontal spacing */
+  padding: 0 80px; /* Add horizontal spacing */
   display: inline-flex; /* Better for buttons */
   align-items: center;
   justify-content: center;
