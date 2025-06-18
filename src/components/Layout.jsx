@@ -1,25 +1,38 @@
 // Layout.jsx
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import { Outlet, useLocation } from 'react-router-dom';
+import { ScrollTrigger } from 'gsap/all';
 
 const Layout = () => {
-  useEffect(() => {
-    const lenis = new Lenis({ autoRaf: false });
+  const lenisRef = useRef(null);
 
-    const raf = (time) => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smooth: true,
+      autoRaf: false,
+    });
+
+    lenisRef.current = lenis;
+
+    function raf(time) {
       lenis.raf(time);
+      ScrollTrigger.update(); // ✅ sync GSAP ScrollTrigger with Lenis
       requestAnimationFrame(raf);
-    };
+    }
 
     requestAnimationFrame(raf);
-    return () => lenis.destroy();
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
-  // optional: scroll to top on route change
+  // Scroll to top on route change (optional)
   const location = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    lenisRef.current?.scrollTo(0, { immediate: true }); // ✅ smooth scroll to top
   }, [location.pathname]);
 
   return (

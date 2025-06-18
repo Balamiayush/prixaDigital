@@ -3,7 +3,6 @@
   import './css/normalize.css';
   import './css/webflow.css';
   import './css/prixa-digital.webflow.css';
-  import Lenis from 'lenis'
   import Home from './pages/Home';
   import Navbar from './components/Navbar';
   import Page2 from './pages/Page2';
