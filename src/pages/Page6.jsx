@@ -4,7 +4,7 @@ import React from 'react'
 
 const Page6 = () => {
   return (
-    <div className="section">
+    <div className="section ">
       
       <div className="padding-global final-cta">
         <div className="container-default final-cta">

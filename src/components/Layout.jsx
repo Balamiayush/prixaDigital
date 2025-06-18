@@ -8,25 +8,16 @@ const Layout = () => {
   const lenisRef = useRef(null);
 
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: 0.1,
-      smooth: true,
-      autoRaf: false,
-    });
+    // Initialize Lenis
+const lenis = new Lenis();
 
-    lenisRef.current = lenis;
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-    function raf(time) {
-      lenis.raf(time);
-      ScrollTrigger.update(); // ✅ sync GSAP ScrollTrigger with Lenis
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
+requestAnimationFrame(raf);
   }, []);
 
   // Scroll to top on route change (optional)

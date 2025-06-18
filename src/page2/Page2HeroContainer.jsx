@@ -18,7 +18,7 @@ const Page2HeroContainer = ({ product }) => {
         </div>
         <div className="box1 flex flex-col items-center">
           <p className='text-[15px] w-[80%]'>{description}</p>
-          <Button text={"Contact Us"} className='bg-white text-black' />
+          <Button text={"Contact Us"} className='bg-white' />
         </div>
       </div>
       <motion.div className="w-full lg:w-[98%] lg:h-screen mx-auto">
