@@ -5,45 +5,45 @@ const ServicesSection = () => {
   const services = [
     {
       title: "Web Development",
-      img:"images/webdev.png",
+      img:"/images/webdev.png",
       des: "I create custom-coded, animation-rich websites that reflect your brand's identity, captivate visitors, and drive conversions through seamless, engaging user experiences.",
       subTitle: ["CMS Integration", "Motion & Animations", "3D Development"],
     },
     {
       title: "AI Solutions",
-      img:"images/ai.png",
+      img:"/images/ai.png",
       des: "From intelligent chatbots to automation tools, I craft AI-powered solutions that streamline operations and elevate customer experiences.",
       subTitle: ["AI Chatbot", "Custom APIs", "Data Automation"],
     },
     {
       title: "UI/UX Design",
-      img:"images/uiux.png",
+      img:"/images/uiux.png",
       des: "Crafting intuitive user interfaces and meaningful user experiences that make products both beautiful and usable.",
       subTitle: ["Wireframing", "Prototyping", "Interaction Design"],
     },
     {
       title: "Mobile Apps",
-      img:"images/mobile.png",
+      img:"/images/mobile.png",
 
       des: "Bringing your ideas to the palms of users with seamless cross-platform mobile applications that deliver impact and performance.",
       subTitle: ["React Native", "Flutter", "Performance Optimization"],
     },
     {
       title: "SEO",
-      img:"images/seo.png",
+      img:"/images/seo.png",
       des: "Optimize your visibility on search engines with smart keyword strategies and technical SEO best practices.",
       subTitle: ["On-Page SEO", "Performance Audits", "Technical Optimization"],
     },
     {
 
       title: "Digital Marketing",
-      img:"images/digital.png",
+      img:"/images/digital.png",
       des: "Drive traffic and conversions with tailored digital campaigns across channels like Google Ads, Meta, and email funnels.",
       subTitle: ["Google Ads", "Content Strategy", "Analytics"],
     },
     {
       title: "Prixa Academy",
-      img:"images/academy.png",
+      img:"/images/academy.png",
       des: "Empowering future innovators with hands-on learning in web, design, AI, and business through practical, guided sessions.",
       subTitle: ["Frontend Training", "UI/UX Workshops", "Mentorship"],
     },

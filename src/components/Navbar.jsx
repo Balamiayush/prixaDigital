@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,9 +47,9 @@ const Navbar = () => {
   return (
     <div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar w-nav ">
       <div className="container w-container">
-        <a href="#" className="brand w-nav-brand">
-          <img src="images/logo-prixa.svg" loading="lazy" width="200" alt="" />
-        </a>
+        <Link to="/" className="brand w-nav-brand">
+          <img src="/images/logo-prixa.svg" loading="lazy" width="200" alt="" />
+        </Link>
 
         {/* Desktop Navigation (unchanged) */}
         <header role="navigation" className="nav-menu w-nav-menu  hidden md:block">

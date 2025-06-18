@@ -12,7 +12,7 @@ function Page5() {
       description:
         "We build websites that feel just right—for you and your audience. Whether it's a bold new brand or a refresh of something familiar, we focus on clean design, smooth user experience, and real results.",
       live: true,
-      src: "images/thirdFactor.mp4",
+      src: "/images/thirdFactor.mp4",
       case: true,
     },
     {
@@ -20,7 +20,7 @@ function Page5() {
       link: "https://speakupnepal.org/",
       description:
         "The platform for Nepal to express issues in their day to day life and see it change.",
-      src: " images/Speakupnepal.mp4",
+      src: " /images/Speakupnepal.mp4",
       live: true,
       case: true,
     },
@@ -29,7 +29,7 @@ function Page5() {
       link: "https://bearyfine.org/",
       description:
         "Our second year was filled with great events, exciting projects, awards and amazing people - so we made another showcase to celebrate.",
-      src: "images/bearyfind1.mp4",
+      src: "/images/bearyfind1.mp4",
       live: true,
       case: true,
     },
@@ -97,7 +97,7 @@ function Page5() {
                             {product.case ? (
                               <Link href="/portfolio" className="button w-inline-block">
                                 <div className="text-block-2">View Project</div>
-                                <img src="images/arrow-dark.svg" loading="lazy" alt="" />
+                                <img src="/images/arrow-dark.svg" loading="lazy" alt="" />
                               </Link>
                             ) : (
                               <a
@@ -107,7 +107,7 @@ function Page5() {
                                 className="button w-inline-block"
                               >
                                 <div className="text-block-2">View Project</div>
-                                <img src="images/arrow-dark.svg" loading="lazy" alt="" />
+                                <img src="/images/arrow-dark.svg" loading="lazy" alt="" />
                               </a>
                             )}
                           </div>

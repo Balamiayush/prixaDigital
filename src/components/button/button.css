@@ -1,19 +1,18 @@
-
-
 .btncontainer {
   cursor: pointer;
-  width: 160px;
   height: 35px;
-  flex-wrap: wrap;
-  display: flex;
+  padding: 0 60px; /* Add horizontal spacing */
+  display: inline-flex; /* Better for buttons */
   align-items: center;
   justify-content: center;
-  align-items: center;
   position: relative;
   font-size: 15px;
   border-radius: 10px;
   border: 1px solid #fff;
+  white-space: nowrap; /* Prevent line break in button text */
+  transition: all 0.3s ease;
 }
+
 
 .upper,
 .lower {
@@ -46,8 +45,7 @@
 
 @media screen and (max-width: 600px) {
   .btncontainer {
-     width: 110px;
-     font-size: 10px;
+    /* padding: 0 14px; */
+    font-size: 10px;
   }
-  
 }

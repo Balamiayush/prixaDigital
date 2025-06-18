@@ -39,10 +39,11 @@ const Page2Main = () => {
   if (!selectedProduct) {
     return <div className="text-white p-10">404 - Project Not Found</div>;
   }
-
+  
   return (
     <div className='w-full text-white overflow-hidden'>
-      <Navbar />
+      <Navbar/>
+
       <Page2HeroContainer product={selectedProduct} />
       <DetailsPage />
       <ImgSliderAnimation />

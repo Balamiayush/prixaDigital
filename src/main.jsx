@@ -6,12 +6,12 @@ import App from './App.jsx';
 import Page2Main from './page2/Page2Main.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout.jsx'; 
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />, // wraps all routes with Lenis
     children: [
+
       { path: "/", element: <App /> },
       {
   path: "/portfolio/:slug",

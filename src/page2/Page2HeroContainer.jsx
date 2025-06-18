@@ -12,7 +12,7 @@ const Page2HeroContainer = ({ product }) => {
           <span className='lg:text-[4rem] text-4xl font-semibold'>{title}</span>
           <div className='flex items-center lg:gap-5 gap-2'>
             {tags.map((tag, index) => (
-              <Button key={index} text={tag} />
+              <Button key={index} text={tag}  />
             ))}
           </div>
         </div>
