@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/button/Button'
+import { motion } from 'framer-motion'
 const Page2HeroContainer = () => {
     return (
         <div className=" w-full">
@@ -18,9 +19,10 @@ const Page2HeroContainer = () => {
                     <Button text={"Contact Us"} className='bg-white text-black' />
                 </div>
             </div>
-          <div className="w-full lg:w-[98%] lg:h-screen mx-auto">
+          <motion.div 
+          className="w-full lg:w-[98%] lg:h-screen mx-auto">
             <img src="/images/thirdfactorpage2.png" alt=""  className='w-full h-full object-cover'/>
-          </div>
+          </motion.div>
         </div>
     )
 }

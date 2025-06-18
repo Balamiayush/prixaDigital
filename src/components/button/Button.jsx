@@ -10,10 +10,10 @@ const Button = ({ text, src, className = '', val }) => {
     <h3 className={`btncontainer btn ${className}`}>
       {isCaseStudy ? (
         <>
-          <Link to="/portfolio" className="upper">
+          <Link to={src} className="upper">
             {text} <i className="ri-arrow-right-line"></i>
           </Link>
-          <Link to="/portfolio" className="lower">
+          <Link to={src} className="lower">
             {text} <i className="ri-arrow-right-line"></i>
           </Link>
         </>
