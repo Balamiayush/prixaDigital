@@ -12,7 +12,15 @@ function Product({ val, mover, count }) {
         <div className="dets w-full md:w-1/4">
           <p className="mb-6 md:mb-10">{val.description}</p>
           <div className="flex items-center gap-3 md:gap-5">
-            {val.live &&   <Button text="Case Study " src="/portfolio" className="bg-white text-black"/>}
+         {val.live && (
+  <Button
+    text="Case Study"
+    src={`/portfolio/${val.title.toLowerCase().replace(/\s+/g, "-")}`}
+    className="bg-white text-black"
+    val="case"
+  />
+)}
+
           </div>
         </div>
       </div>

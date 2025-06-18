@@ -13,7 +13,10 @@ const router = createBrowserRouter([
     element: <Layout />, // wraps all routes with Lenis
     children: [
       { path: "/", element: <App /> },
-      { path: "/portfolio", element: <Page2Main /> },
+      {
+  path: "/portfolio/:slug",
+  element: <Page2Main />
+}
     ],
   },
 ]);
