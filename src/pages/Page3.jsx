@@ -4,13 +4,13 @@ import Spline from '@splinetool/react-spline';
 const Page3 = () => {
   return (
     <div className="section">
+      <p className=' absolute top-[-4rem] lg:top-5 text-white lg:text-[3rem] font-semibold text-3xl'>The X That Defines Us</p>
       <div className="padding-global">
         <div className="container-default sticky">
           <div className="sticky-container">
             <div className="spline-scene-2">
               <Spline scene="https://prod.spline.design/SOpCtg02h6wgCyPG/scene.splinecode" />
             </div>
-
             <div className="scrolling-features">
               <div className="_3-col-sticky-div">
                 <div className="first-section">

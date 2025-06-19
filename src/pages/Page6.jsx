@@ -5,7 +5,7 @@ import React from 'react'
 const Page6 = () => {
   return (
     <div className="section ">
-      
+       <div className="fade-out-top "></div>
       <div className="padding-global final-cta">
         <div className="container-default final-cta">
           <h2 className="statement" data-split-text>Let’s Work Together</h2>
@@ -17,14 +17,10 @@ const Page6 = () => {
         </div>
             
         <div className="spline-absolute">
-            <div className="spline-scene">
-  
  <div className="fade-out-bottom "></div>
-          <Spline className="spline-scene" data-w-id="78f36260-0766-52e8-f25a-8fb9798a6483" data-animation-type="spline" scene="https://prod.spline.design/q7Zli-P11r5mAIez/scene.splinecode">
+          <Spline  data-w-id="78f36260-0766-52e8-f25a-8fb9798a6483" data-animation-type="spline" scene="https://prod.spline.design/q7Zli-P11r5mAIez/scene.splinecode">
             <canvas />
           </Spline>
-           
-            </div>
         </div>
       </div>
     </div>
