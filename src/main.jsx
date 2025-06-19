@@ -10,16 +10,17 @@ const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-
-      { path: "/", element: <App /> },
       {
         path: "/portfolio/:slug",
         element: <Page2Main />
-      }
+      },
+
+      { path: "/", element: <App /> },
     ],
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
+  
   <RouterProvider router={router} />
 );

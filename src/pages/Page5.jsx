@@ -93,7 +93,6 @@ function Page5() {
 
                           <div className="right-wrapper-portfolio">
                             <h1 className="paragraph-l portfolio-p">{product.description}</h1>
-
                             {product.case ? (
                               <Link href="/portfolio" className="button w-inline-block">
                                 <div className="text-block-2">View Project</div>

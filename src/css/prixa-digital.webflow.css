@@ -494,15 +494,9 @@ body {
 
 .paragraph-l {
   color: #fff;
-  font-family: Plus Jakarta Sans, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.paragraph-l.portfolio-p {
-  width: 320px;
-  font-size: 16px;
 }
 
 .right-wrapper-portfolio {

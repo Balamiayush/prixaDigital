@@ -2,28 +2,29 @@
 import React, { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import { Outlet, useLocation } from 'react-router-dom';
-import { ScrollTrigger } from 'gsap/all';
 
 const Layout = () => {
   const lenisRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
-    // Initialize Lenis
-const lenis = new Lenis();
+    const lenis = new Lenis();
+    lenisRef.current = lenis;
 
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy(); // good cleanup
+    };
   }, []);
 
-  // Scroll to top on route change (optional)
-  const location = useLocation();
   useEffect(() => {
-    lenisRef.current?.scrollTo(0, { immediate: true }); // ✅ smooth scroll to top
+    lenisRef.current?.scrollTo(0, { immediate: true }); // scroll to top on route change
   }, [location.pathname]);
 
   return (
