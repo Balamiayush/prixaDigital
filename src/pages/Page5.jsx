@@ -115,7 +115,7 @@ function Page5() {
 
   // Desktop (same idea, ensure `Product.jsx` uses <Link> if needed)
   return (
-    <div className="flex flex-col  items-center mt-10 relative">
+    <div className="flex flex-col  items-center mt-10 w-full px-10 relative">
       {products.map((val, index) => (
         <Product key={index} val={val} mover={mover} count={index} />
       ))}

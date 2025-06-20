@@ -21,7 +21,7 @@ const Page2HeroContainer = ({ product }) => {
           <Button text={"Contact Us"} className='bg-white' />
         </div>
       </div>
-      <motion.div className="w-full lg:w-[98%] lg:h-screen mx-auto">
+      <motion.div className="w-full px-2 lg:px-5 mt-2 lg:mt-0 h-full mx-auto">
         <img src={image} alt={title} className='w-full h-full object-cover' />
       </motion.div>
     </div>
