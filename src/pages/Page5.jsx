@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Product from "../components/Product";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import Button from "../components/button/Button";
 
 function Page5() {
   const products = [
@@ -93,39 +93,18 @@ function Page5() {
 
                           <div className="right-wrapper-portfolio">
                             <h1 className="paragraph-l portfolio-p">{product.description}</h1>
-                            {product.case ? (
-                              <Link href="/portfolio" className="button w-inline-block">
-                                <div className="text-block-2">View Project</div>
-                                <img src="/images/arrow-dark.svg" loading="lazy" alt="" />
-                              </Link>
-                            ) : (
-                              <a
-                                href={product.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="button w-inline-block"
-                              >
-                                <div className="text-block-2">View Project</div>
-                                <img src="/images/arrow-dark.svg" loading="lazy" alt="" />
-                              </a>
-                            )}
-                          </div>
+                                <Button
+                text="Case Study"
+                val="case"
+                className=""
+                src={`/portfolio/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
+              />
+                        </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section footer">
-          <div className="padding-global footer">
-            <div className="container-default final-cta text-center">
-              <h2 className="statement">hello@prixadigital.com</h2>
-              <div className="paragraph center">
-                © 2011–2023 Prixa Digital. All rights reserved.
               </div>
             </div>
           </div>
