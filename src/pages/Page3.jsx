@@ -16,7 +16,7 @@ const Page3 = () => {
 
   return (
     <div ref={ref} className="section relative">
-      <p className='absolute top-[-4rem] lg:top-5 text-white lg:text-[3rem] font-semibold text-3xl'>
+      <p className='absolute top-[-3rem] md:top-[2vw] text-white lg:text-[3rem] font-semibold text-3xl'>
         The X That Defines Us
       </p>
 

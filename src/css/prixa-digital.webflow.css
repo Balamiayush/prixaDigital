@@ -1037,7 +1037,7 @@ body {
   .container-default.statemennt {
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     display: flex;
   }
 
@@ -1059,11 +1059,10 @@ body {
   .bg-wrapper.statement-blur-circle {
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 40vh;
     padding-top: 0;
     padding-bottom: 0;
     inset: 0%;
-    overflow: hidden;
   }
 
   .heading.hero-h1 {

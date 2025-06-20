@@ -52,7 +52,7 @@ const ServicesSection = () => {
   return (
     <div className="flex flex-col m-0 p-0  w-full items-center justify-center text-white  relative  ">
       <div className=" text-center  relative top-[-2rem] z-10 flex flex-col gap-2     ">
-        <span className="font-bold text-center text-5xl ">
+        <span className="font-bold text-center  lg:text-5xl text-3xl ">
           Enterprise-Grade Technology
         </span>
         <p>At Prixa, we build scalable, secure, and efficient digital solutions that power the future of your business.</p>
@@ -61,15 +61,17 @@ const ServicesSection = () => {
       {services.map((service, index) => (
         <motion.div
           key={index}
-
+          initial={{ opacity: 0.8, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          className={`w-[90%] h-[65vh] rounded-xl sticky   border border-[#393632] bg-[#080807] flex justify-between `}
+          className={`w-[90%] h-[65vh] rounded-xl sticky   border border-[#393632] bg-[#15171B] flex justify-between mt-5  mb-5 `}
           style={{
-            top: `
+            // top: `
             
-            ${index === 6 ? "20%" : 5 + index * 10}%
+            // ${index === 6 ? "20%" : 5 + index * 10}%
             
-            `,
+            // `,
+            top:`calc(6vh + ${index * 8}%)`,
             willChange: "transform, opacity",
             transform: "translateZ(0)",
             backfaceVisibility: "hidden",

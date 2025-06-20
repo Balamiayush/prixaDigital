@@ -136,7 +136,7 @@ function Page5() {
 
   // Desktop (same idea, ensure `Product.jsx` uses <Link> if needed)
   return (
-    <div className="flex flex-col  items-center lg:mt-32 relative">
+    <div className="flex flex-col  items-center mt-10 relative">
       {products.map((val, index) => (
         <Product key={index} val={val} mover={mover} count={index} />
       ))}
@@ -146,7 +146,7 @@ function Page5() {
           initial={{ y: pos, x: "-50%" }}
           animate={{ y: `${pos}rem` }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-          className="window absolute -right-[20%] w-[40%] h-[40%] md:w-[32rem]  lg:h-[23rem] lg:left-[44%] overflow-hidden"
+          className="window absolute -right-[20%] md:w-[32rem]  lg:h-[23rem] lg:left-[45%] overflow-hidden"
         >
           {products.map((product, index) => (
             <motion.div
