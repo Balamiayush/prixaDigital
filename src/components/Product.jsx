@@ -3,10 +3,10 @@ import Button from "./button/Button";
 
 function Product({ val, mover, count }) {
   return (
-    <div className="w-full relative lg:top-[4rem]   left-10 py-10 md:py-20 h-auto md:h-[20rem]  text-white lg:mb-10">
+    <div className="w-full relative lg:top-[4rem]   left-10 py-10 md:py-20 h-auto md:h-[20rem]  text-white md:mb-10">
       <div
         onMouseEnter={() => { mover(count) }}
-        className="max-w-screen-xl  md:px-6 flex flex-col md:flex-row items-center md:items-center justify-between overflow-hidden"
+        className="max-w-screen-xl   flex flex-col md:flex-row items-center md:items-center justify-between overflow-hidden"
       >
         <h1 className="titleProduct  capitalize font-medium mb-4 md:mb-0">{val.title}</h1>
         <div className="dets w-full md:w-1/4">

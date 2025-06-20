@@ -1,38 +1,60 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
 
 const Page3 = () => {
+  const ref = useRef(null);
+
+  // Use Framer Motion scroll hooks
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end 60%"], // Equivalent to ScrollTrigger start-end
+  });
+
+  // Animate opacity from 1 to 0 as user scrolls
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
   return (
-    <div className="section">
-      <p className=' absolute top-[-4rem] lg:top-5 text-white lg:text-[3rem] font-semibold text-3xl'>The X That Defines Us</p>
+    <div ref={ref} className="section relative">
+      <p className='absolute top-[-4rem] lg:top-5 text-white lg:text-[3rem] font-semibold text-3xl'>
+        The X That Defines Us
+      </p>
+
       <div className="padding-global">
         <div className="container-default sticky">
           <div className="sticky-container">
             <div className="spline-scene-2">
               <Spline scene="https://prod.spline.design/SOpCtg02h6wgCyPG/scene.splinecode" />
             </div>
+
             <div className="scrolling-features">
               <div className="_3-col-sticky-div">
                 <div className="first-section">
-                  <div className="hover-1">
+
+                  {/* Framer Motion: Animated opacity */}
+                  <motion.div style={{ opacity }} className="hover-1">
                     <div className="hover-text-x">Innovation</div>
                     <div className="hover-cirle"></div>
-                  </div>
-                  <div className="hover-1 hover-2">
+                  </motion.div>
+
+                  <motion.div style={{ opacity }} className="hover-1 hover-2">
                     <div className="hover-cirle"></div>
                     <div className="hover-text-x">Design</div>
-                  </div>
-                  <div className="hover-1 hover-2 hover-3 hover-4">
+                  </motion.div>
+
+                  <motion.div style={{ opacity }} className="hover-1 hover-2 hover-3 hover-4">
                     <div className="hover-text-x">Data</div>
                     <div className="hover-cirle"></div>
-                  </div>
-                  <div className="hover-1 hover-2 hover-3">
+                  </motion.div>
+
+                  <motion.div style={{ opacity }} className="hover-1 hover-2 hover-3">
                     <div className="hover-cirle"></div>
                     <div className="hover-text-x">Design</div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
 
+              {/* Features content */}
               <div className="feature-scrolling right">
                 <img src="images/eye-popping.webp" alt="" className="image-3" />
                 <h3 className="heading-3">Eye-popping Design</h3>
@@ -50,6 +72,7 @@ const Page3 = () => {
               </div>
             </div>
 
+            {/* Second Scrolling Features */}
             <div className="scrolling-features">
               <div className="feature-scrolling right second-features">
                 <img src="images/visua-storytelling.webp" alt="" className="image-3" />
