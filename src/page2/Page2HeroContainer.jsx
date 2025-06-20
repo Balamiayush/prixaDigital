@@ -7,7 +7,7 @@ const Page2HeroContainer = ({ product }) => {
 
   return (
     <div className="w-full">
-      <div className="flex w-full h-full lg:py-10 lg:justify-between lg:px-10 flex-col items-center lg:flex-row">
+      <div className="flex w-full h-full lg:py-5   lg:justify-between lg:px-10 flex-col items-center lg:flex-row">
         <div className="box1 py-10 flex flex-col lg:gap-5">
           <span className='lg:text-[4rem] text-4xl font-semibold'>{title}</span>
           <div className='flex items-center lg:gap-5 gap-2'>
