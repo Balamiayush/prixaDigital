@@ -5,7 +5,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="section">
-      
+      <img src="/images/scroll.gif" className='absolute top-[80%]  w-[5rem] z-[1000]' alt="" />
       <div className="padding-global">
         <div className="container-default">
           <div className="hero-text">
