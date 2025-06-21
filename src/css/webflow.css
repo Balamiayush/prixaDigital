@@ -68,11 +68,10 @@ body {
   min-height: 100%;
   line-height: 20px;
 }
-img {
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
+.hover-1 {
+  will-change: opacity, transform;
 }
+
 html.w-mod-touch * {
   background-attachment: scroll !important;
 }

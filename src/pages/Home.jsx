@@ -5,7 +5,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="section">
-      <img src="/images/scroll.gif" className='absolute top-[80%]  w-[5rem] z-[1000]' alt="" />
+      <img src="/images/scroll.gif" className='absolute top-[80%]  w-[5rem] z-[1000] right-0 ' alt="" />
       <div className="padding-global">
         <div className="container-default">
           <div className="hero-text">
@@ -29,7 +29,7 @@ const Home = () => {
       </div>
       <div className="bg-wrapper">
         <div className="fade-out-hero"></div>
-        <div   className="spline-scene">
+       
         <Spline
         data-w-id="2345e543-50b5-bdc7-1558-a6ded4438324"
         data-animation-type="spline"
@@ -37,7 +37,7 @@ const Home = () => {
         >
           <canvas></canvas>
         </Spline>
-            </div>
+
       </div>
     </div>
   );

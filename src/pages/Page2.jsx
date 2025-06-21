@@ -33,7 +33,7 @@ const Page2 = () => {
               images/Ellipse-21.webp 2072w
             "
             className="image"
-            initial={{ rotateZ: 0 }}
+            initial={{ rotateZ: 180 }}
             animate={{ rotateZ: 360 }}
             transition={{
               duration: 20,

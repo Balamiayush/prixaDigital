@@ -11,7 +11,7 @@ const ServicesSection = () => {
     },
     {
       title: "AI Solutions",
-      img: "/images/ai.png",
+      img: "/images/aisolution.webp",
       des: "From intelligent chatbots to automation tools, I craft AI-powered solutions that streamline operations and elevate customer experiences.",
       subTitle: ["AI Chatbot", "Custom APIs", "Data Automation"],
     },
@@ -37,7 +37,7 @@ const ServicesSection = () => {
     {
 
       title: "Digital Marketing",
-      img: "/images/digital.png",
+      img: "/images/digitalmarketing.webp",
       des: "Drive traffic and conversions with tailored digital campaigns across channels like Google Ads, Meta, and email funnels.",
       subTitle: ["Google Ads", "Content Strategy", "Analytics"],
     },
